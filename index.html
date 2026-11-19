@@ -1,13 +1,115 @@
-<!doctype html>
-<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#087f50"><title>Ripon All-in-One QR</title>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#f2f7f4;color:#17231c;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif}.wrap{max-width:480px;margin:22px auto;padding:16px}.hero{background:linear-gradient(135deg,#087f50,#10a36a);color:white;border-radius:24px;padding:28px 20px;text-align:center;box-shadow:0 12px 30px #087f5025}.hero h1{font-size:27px;margin:0 0 5px}.hero p{margin:0;opacity:.92;font-size:13px}.sub{text-align:center;color:#65746b;margin:22px 0 14px;font-size:14px}.item{display:flex;align-items:center;gap:13px;background:white;border:1px solid #e3ece6;border-radius:17px;padding:16px;text-decoration:none;color:inherit;box-shadow:0 4px 14px #102a1810;margin-bottom:12px}.ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-size:23px;background:#e9f7ef}.item strong{display:block;font-size:16px}.item small{color:#6b7a70}.arrow{margin-left:auto;color:#819087;font-size:22px}.copy{border:0;border-radius:11px;background:#087f50;color:#fff;padding:9px 12px;font-weight:650;cursor:pointer;margin-top:8px}.wifi{background:#fff;border:1px solid #e3ece6;border-radius:17px;padding:17px;margin-top:2px}.wifi h2{font-size:17px;margin:0 0 7px}.wifi p{margin:5px 0;color:#64736a;font-size:13px}.wifi img{display:block;width:190px;max-width:100%;margin:12px auto;border-radius:8px}.note{font-size:11px;color:#7a887f;text-align:center;margin:18px 8px}
-</style></head><body><main class="wrap">
-<header class="hero"><h1>RIPON</h1><p>ALL-IN-ONE CONNECT</p><p style="margin-top:12px">একবার স্ক্যান করুন • পছন্দের সার্ভিস বেছে নিন</p></header>
-<p class="sub">আপনার পছন্দের সার্ভিসে যেতে নিচের অপশন নির্বাচন করুন</p>
-<a class="item" href="https://wa.me/8801727468108"><span class="ico">💬</span><span><strong>WhatsApp</strong><small>সরাসরি মেসেজ করুন</small></span><span class="arrow">›</span></a>
-<a class="item" href="https://imo.im/"><span class="ico">📞</span><span><strong>IMO</strong><small>IMO-তে +8801727468108 নম্বর দিয়ে যোগাযোগ করুন</small></span><span class="arrow">›</span></a>
-<div class="item"><span class="ico">৳</span><span><strong>bKash</strong><small>পেমেন্ট নম্বর: 01309188569</small><br><button class="copy" onclick="copyBkash()">বিকাশ নম্বর কপি করুন</button></span></div>
-<section class="wifi"><h2>📶 Connect to Ripon Wifi</h2><p>Wi-Fi নাম: <b>Ripon Wifi</b></p><p>নিরাপত্তা: WPA/WPA2</p><p>পাসওয়ার্ড: <b>Ripon123</b></p><p>নিচের Wi-Fi QR স্ক্যান করেও সংযোগের চেষ্টা করতে পারেন:</p><img src="wifi-qr.png" alt="Ripon Wifi QR Code"></section>
-<p class="note">Ripon All-in-One QR · Wi-Fi তথ্য এই পেজে দৃশ্যমান। শুধু বিশ্বস্ত ব্যক্তিদের সঙ্গে QR শেয়ার করুন।</p>
-</main><script>function copyBkash(){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText("01309188569").then(()=>alert("বিকাশ নম্বর কপি হয়েছে")).catch(()=>alert("বিকাশ নম্বর: 01309188569"))}else{alert("বিকাশ নম্বর: 01309188569")}}</script></body></html>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2c">
+  <title>RIPON | All-in-One Connect</title>
+  <style>
+    :root{
+      --navy:#071b2c;--navy2:#102d43;--green:#08a66a;--mint:#e7fff4;
+      --text:#122333;--muted:#607080;--white:#fff;--line:#e6edf1;
+      --shadow:0 18px 45px rgba(4,25,42,.12)
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali","Segoe UI",sans-serif;
+      color:var(--text);background:linear-gradient(180deg,#eaf7f2 0,#f5f8fb 420px,#f5f8fb 100%);min-height:100vh}
+    .page{width:min(100% - 32px,760px);margin:0 auto;padding:28px 0 42px}
+    .hero{position:relative;overflow:hidden;border-radius:28px;padding:30px 26px 28px;
+      color:white;background:radial-gradient(circle at 90% 5%,#20d38d 0,transparent 28%),
+      linear-gradient(125deg,#063c37,#087d59 55%,#05a86c);box-shadow:0 18px 42px #087d5930}
+    .hero:after{content:"";position:absolute;width:210px;height:210px;border:1px solid #ffffff28;border-radius:50%;right:-70px;bottom:-130px}
+    .brand{font-size:clamp(32px,7vw,48px);font-weight:900;letter-spacing:2px;line-height:1}
+    .tag{font-size:14px;letter-spacing:2.5px;font-weight:700;opacity:.9;margin-top:10px}
+    .hero p{margin:18px 0 0;font-size:clamp(14px,3.5vw,18px);line-height:1.7;color:#eafff5}
+    .banner{display:block;width:100%;height:auto;max-height:210px;object-fit:cover;border-radius:18px;margin:18px 0 22px;box-shadow:var(--shadow)}
+    .intro{text-align:center;color:#5d716e;font-size:15px;margin:0 0 18px}
+    .section-title{font-size:17px;font-weight:800;margin:26px 2px 12px}
+    .services{display:grid;gap:13px}
+    .service{display:flex;align-items:center;gap:15px;padding:17px 18px;background:white;border:1px solid var(--line);
+      border-radius:20px;text-decoration:none;color:inherit;box-shadow:0 8px 24px #102d4309;transition:.18s}
+    .service:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .ico{width:52px;height:52px;flex:0 0 52px;border-radius:16px;display:grid;place-items:center;background:var(--mint);font-size:26px}
+    .details{min-width:0;flex:1}.details strong{display:block;font-size:18px}.details small{display:block;color:var(--muted);font-size:14px;line-height:1.55;margin-top:3px}
+    .arrow{font-size:26px;color:#81918e}
+    .panel{background:white;border:1px solid var(--line);border-radius:22px;padding:19px;box-shadow:0 8px 24px #102d4309}
+    .panel h2{font-size:19px;margin:0 0 7px}.panel p{margin:7px 0;color:var(--muted);line-height:1.65}
+    .copy-btn{border:0;border-radius:13px;background:#087d59;color:white;font:inherit;font-weight:700;font-size:15px;padding:12px 17px;cursor:pointer;margin-top:8px}
+    .copy-btn:hover{background:#056849}
+    .wifi-grid{display:grid;grid-template-columns:1fr 150px;gap:16px;align-items:center}
+    .wifi-qr{width:150px;max-width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:14px;padding:7px}
+    .hint{font-size:12px!important;color:#839099!important}
+    footer{text-align:center;color:#81918e;font-size:13px;margin-top:26px}
+    @media(max-width:520px){.page{width:min(100% - 22px,760px);padding-top:14px}.hero{padding:25px 20px;border-radius:23px}.service{padding:14px}.ico{width:46px;height:46px;flex-basis:46px}.wifi-grid{grid-template-columns:1fr 112px;gap:10px}.wifi-qr{width:112px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand">RIPON</div>
+      <div class="tag">ALL-IN-ONE CONNECT</div>
+      <p>একবার স্ক্যান করুন • পছন্দের সার্ভিস বেছে নিন<br>সহজ যোগাযোগ, দ্রুত সংযোগ</p>
+    </header>
+
+    <!-- আপনার রিপন স্টুডিও ব্যানারটি রিপোজিটরিতে থাকলে এটি দেখাবে -->
+    <img class="banner" src="ripon-studio-banner.png" alt="Ripon Studio Banner"
+         onerror="this.style.display='none'">
+
+    <p class="intro">আপনার পছন্দের সার্ভিসে যেতে নিচের অপশন নির্বাচন করুন</p>
+
+    <h2 class="section-title">যোগাযোগ করুন</h2>
+    <section class="services" aria-label="যোগাযোগের মাধ্যম">
+      <a class="service" href="https://wa.me/8801727468108" target="_blank" rel="noopener">
+        <span class="ico">💬</span>
+        <span class="details"><strong>WhatsApp</strong><small>সরাসরি মেসেজ করুন</small></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="service" href="https://imo.im/" target="_blank" rel="noopener">
+        <span class="ico">📞</span>
+        <span class="details"><strong>IMO</strong><small>IMO-তে +8801727468108 নম্বরে যোগাযোগ করুন</small></span>
+        <span class="arrow">›</span>
+      </a>
+    </section>
+
+    <h2 class="section-title">পেমেন্ট</h2>
+    <section class="panel">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span class="ico">৳</span>
+        <div class="details"><h2 style="margin:0">bKash</h2><p style="margin:3px 0 0">পেমেন্ট নম্বর: <strong>01309188569</strong></p></div>
+      </div>
+      <button class="copy-btn" onclick="copyText('01309188569','bKash নম্বর')">বিকাশ নম্বর কপি করুন</button>
+    </section>
+
+    <h2 class="section-title">Wi-Fi সংযোগ</h2>
+    <section class="panel wifi-grid">
+      <div>
+        <h2>📶 Connect to Ripon WiFi</h2>
+        <p>Wi-Fi নাম: <strong>Ripon Wifi</strong></p>
+        <p>নিরাপত্তা: WPA/WPA2</p>
+        <p>পাসওয়ার্ড: <strong>Ripon123</strong></p>
+        <button class="copy-btn" onclick="copyText('Ripon123','Wi-Fi পাসওয়ার্ড')">পাসওয়ার্ড কপি করুন</button>
+        <p class="hint">Wi-Fi QR কোড স্ক্যান করেও সংযোগ করতে পারবেন।</p>
+      </div>
+      <img class="wifi-qr" src="wifi-qr.png" alt="Ripon WiFi QR Code"
+           onerror="this.style.display='none'">
+    </section>
+
+    <footer>© <span id="year"></span> RIPON STUDIO · All Rights Reserved</footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function copyText(value,label){
+      if(navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(value).then(()=>alert(label+' কপি হয়েছে।'))
+          .catch(()=>fallbackCopy(value,label));
+      }else fallbackCopy(value,label);
+    }
+    function fallbackCopy(value,label){
+      const el=document.createElement('textarea');el.value=value;document.body.appendChild(el);
+      el.select();try{document.execCommand('copy');alert(label+' কপি হয়েছে।')}
+      catch(e){alert('কপি করা যায়নি। নম্বর/পাসওয়ার্ডটি হাতে কপি করুন: '+value)}
+      el.remove();
+    }
+  </script>
+</body>
+</html>
